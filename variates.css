@@ -1,0 +1,13 @@
+:root {
+    --thin: 200;
+    --regular: 400;
+    --bold: 600;
+
+    --Poppins:'Poppins', sans-serif;
+    --Opensans: 'Opens Sans', sans-serif;
+
+    --clr-primary-violet: hsl(257, 40%, 49%);
+    --clr-primary-magenta: hsl(300, 69%, 71%);
+}
+
+/* - [Font Awesome](https://fontawesome.com/) */

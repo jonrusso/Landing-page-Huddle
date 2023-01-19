@@ -1,0 +1,139 @@
+
+body {
+  background: url(src/images/bg-desktop.svg),
+    var(--clr-primary-violet) center center no-repeat;
+  display: grid;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 10rem;
+}
+
+.header {
+  display: grid;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  width: 100%;
+}
+
+.content .content__info {
+  gap: 15px;
+}
+
+.content__info h1 {
+  font-family: var(--Poppins);
+  font-weight: var(--bold);
+  color: aliceblue;
+  font-size: 5rem;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.content .content__info p {
+  font-family: var(--Opensans);
+  font-weight: var(--thin);
+  color: aliceblue;
+
+  font-size: 3rem;
+  transition: all 0.3s ease-in;
+}
+
+.content .content__info a {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  background: whitesmoke;
+  padding: 13px 60px;
+  margin: 20px auto;
+  border-radius: 25px;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.content .content__info a:hover {
+  background-color: var(--clr-primary-magenta);
+  color: whitesmoke;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.social a i {
+  border-radius: 50%;
+  border: 2px solid white;
+  color: whitesmoke;
+  font-size: 25px;
+  margin: 30px;
+  border-radius: 100%;
+  transition: 0.3s;
+  padding: 25px;
+}
+
+.social a:hover {
+  color: var(--clr-primary-magenta);
+}
+
+.social i:hover {
+  background-color: var(--clr-primary-magenta);
+  border-color: var(--clr-primary-magenta);
+}
+
+@media (max-width: 426px) {
+  body {
+    background: url(src/images/bg-mobile.svg),
+      var(--clr-primary-violet) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    margin: 3rem auto;
+
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    align-content: center;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .content .content__img img {
+    max-width: 100%;
+  }
+
+  .header {
+    padding-left: 50px;
+  }
+
+  .header img {
+    width: 40%;
+  }
+
+  .content .content__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .content__info h1 {
+    font-size: 3rem;
+  }
+
+  .content .content__info p {
+    font-size: 1.5rem;
+  }
+
+  .content .content__info a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+}
